@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ReservationFormComponent } from './reservation-form/reservation-form.component';
 
 const routes: Routes = [
-  { path: '', component: ReservationFormComponent },
-];
+  { path: '', component: ReservationFormComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
