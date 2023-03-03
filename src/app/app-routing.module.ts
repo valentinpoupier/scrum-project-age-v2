@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LeChefComponent } from './modules/le-chef/le-chef.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'reservation', loadChildren: () => import('./modules/reservation/reservation.module').then(m => m.ReservationModule) },
+  { path: 'le-chef', component: LeChefComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
