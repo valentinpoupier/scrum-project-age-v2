@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LeChefComponent } from './modules/le-chef/le-chef.component';
+import { BannerComponent } from './shared/components/banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeChefComponent
+    BannerComponent
   ],
   imports: [
     BrowserModule,
