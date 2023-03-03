@@ -4,7 +4,7 @@ import { LeChefComponent } from './modules/le-chef/le-chef.component';
 
 const routes: Routes = [
   { path: 'reservation', loadChildren: () => import('./modules/reservation/reservation.module').then(m => m.ReservationModule) },
-  { path: 'le-chef', component: LeChefComponent },
+  { path: 'chef', component: LeChefComponent },
 ];
 
 @NgModule({
